@@ -12,15 +12,15 @@ function __autoload($classname) {
 		$Message = "Unable to load class ".$classname.". Exception code: ".$e->getCode();
 	}
 }
-
 $DBM = new DatabaseManager();
 
-if (isset($_SESSION['Logintoken']) && isset($_SESSION['UserID'])) {
+if (isset($_SESSION['UserID'])) {
 	$user_id = $_SESSION['UserID'];
-	$User = new Users($DBM->GetPDO(), $user_id);
+	$User = new Person($DBM->GetPDO(), $user_id);
 } else {
-	$User = new Users($DBM->GetPDO());
+	$User = new Person($DBM->GetPDO());
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -38,16 +38,13 @@ if (isset($_SESSION['Logintoken']) && isset($_SESSION['UserID'])) {
 	<!-- font awesome -->
 	<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!-- custom scripts -->
-	<script src="lib/js/templateLoader.js" type="text/javascript"></script>
-	<script src="lib/js/dropzone.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="lib/js/dropzone.min.css" type="text/css" />
 	<!-- custom styles -->
-	<link rel="stylesheet" href="lib/stylesheets/style.css" />
-	<link rel="stylesheet" href="lib/sass/style.scss" />
+	<link rel="stylesheet" href="lib/css/style.css" />
+	<link rel="stylesheet" href="lib/css/style.scss" />
 </head>
 <body>
 	<?php 
-	if (isset($_SESSION['Logintoken'])) { 
+	if (isset($_SESSION['Userdata'])) { 
 		?>
 		<!-- <nav class="top-nav">
 			<ul class="pull-left">
@@ -71,70 +68,35 @@ if (isset($_SESSION['Logintoken']) && isset($_SESSION['UserID'])) {
 					<hr />
 				</li>
 				<li>
-					<a href="blogpost-overview">
+					<a href="lopende-aanvragen">
 						<div class="icon-container">
 							<div class="icon-flexbox">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</div>
-						</div> 
-						<div class="menu-item">Blogposts</div> 
-						<hr />
-					</a>
-					<ul class="sub-nav">
-						<li>
-							<a href="add-blogpost">
-								<div class="icon-container">
-									<div class="icon-flexbox">
-										<i class="fa fa-plus-square" aria-hidden="true"></i> 
-									</div>
-								</div>
-								<div class="menu-item">Toevoegen</div>
-							</a>
-							<hr />
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="project-overview">
-						<div class="icon-container">
-							<div class="icon-flexbox">
-								<i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> 
+								<i class="fa fa-home" aria-hidden="true"></i> 
 							</div>
 						</div>
-						<div class="menu-item">Projects</div>
+						<div class="menu-item">Mijn aanvragen</div>
 					</a>
 					<hr />
 				</li>
 				<li>
-					<a href="page-overview">
+					<a href="aanvraag-toevoegen">
 						<div class="icon-container">
 							<div class="icon-flexbox">
-								<i class="fa fa-file-text-o" aria-hidden="true"></i>
+								<i class="fa fa-home" aria-hidden="true"></i> 
 							</div>
 						</div>
-						<div class="menu-item">Pages</div>
+						<div class="menu-item">Nieuwe aanvraag</div>
 					</a>
 					<hr />
 				</li>
 				<li>
-					<a href="upload">
+					<a href="mijn-gegevens">
 						<div class="icon-container">
 							<div class="icon-flexbox">
-								<i class="fa fa-folder-open-o" aria-hidden="true"></i></i> 
+								<i class="fa fa-home" aria-hidden="true"></i> 
 							</div>
 						</div>
-						<div class="menu-item">Files and templates</div>
-					</a>
-					<hr />
-				</li>
-				<li>
-					<a href="user-overview">
-						<div class="icon-container">
-							<div class="icon-flexbox">
-								<i class="fa fa-user" aria-hidden="true"></i> 
-							</div>
-						</div>
-						<div class="menu-item">Users</div>
+						<div class="menu-item">Mijn gegevens</div>
 					</a>
 					<hr />
 				</li>
@@ -145,7 +107,7 @@ if (isset($_SESSION['Logintoken']) && isset($_SESSION['UserID'])) {
 								<i class="fa fa-sliders" aria-hidden="true"></i> 
 							</div>
 						</div>
-						<div class="menu-item">Settings</div>
+						<div class="menu-item">Instellingen</div>
 					</a>
 					<hr />
 				</li>
@@ -158,30 +120,39 @@ if (isset($_SESSION['Logintoken']) && isset($_SESSION['UserID'])) {
 						</div>
 					</div>
 					<div class="menu-item">
-						Logout
+						uitloggen
 					</div>
 				</a>
 			</li>
 		</ul>
 	</nav>
 	<?php } ?>
-	<main <?php if(isset($_SESSION['Logintoken'])){echo 'class="main-loggedin"';} ?>>
+	<main <?php if(isset($_SESSION['Userdata'])){echo 'class="main-loggedin"';} ?>>
 		<?php
+		var_dump($_SESSION);
 		$page = isset($_GET['page']) ? $_GET['page'] : "404.php";
 		$page = explode('.', $page)[0];
+		echo $page;
 
 		switch ($page) {
-			case 'value':
-				# code...
+			case 'login':
+				$file = 'login.php';
 				break;
-			
+			case "dashboard":
+				$file = 'dashboard.php';
+				break;
+			case 'logout':
+				session_destroy();
+				break;
+
+			case '404':
 			default:
-				# code...
+				$file = '404.php';
 				break;
 		}
 
-		if(!$User->LoginCheck()){
-			require 'Pages/Login.php';
+		if(!isset($_SESSION['Userdata'])){
+			require 'Pages/login.php';
 		}elseif(file_exists('Pages/'.$file)){
 			require('Pages/'.$file);
 		}else{
