@@ -1,5 +1,7 @@
 nav{
 	background-color: #C73226;
+	position: fixed;
+	z-index: 1000;
 }
 nav div ul li a{
 	color: white;
@@ -11,4 +13,7 @@ nav div ul li:hover{
 }
 nav div ul li:hover a{
 	color: #263248;
+}
+.height_fix{
+	height: 64px;
 }

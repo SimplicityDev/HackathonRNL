@@ -1,3 +1,46 @@
-<p>
-  home works!
-</p>
+<div class="row">
+  <div class="col s8 offset-s2">
+    <h3>Snel een vergunning aanvragen voor jouw project?</h3>
+    <div class="col s6 m6" *ngFor="let req of requests">
+      <div class="card">
+        <div class="card-image">
+          <img [src]="'assets/images/'+req.image">
+          <span class="card-title">{{req.title}}</span>
+        </div>
+        <div class="card-content">
+          <p>{{req.desc}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="link">Vraag deze vergunning aan voor jouw project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+	<div class="col s8 offset-s2">
+		<h4>Vragen?</h4>
+		<p>
+			Om je makkelijk op weg te helpen hebben we de meeste gestelde vragen hieronder neerget zodat je niet langer hoeft te wachten op een reactie.
+		</p>
+		<ul class="collapsible" data-collapsible="accordion">
+		  <li>
+		    <div class="collapsible-header">Waar kan ik zien hoe het staat met mijn aanvraag?</div>
+		    <div class="collapsible-body"><span>Om te zien hoe ver wij zijn met je aanvraag moet je <a href="/login">inloggen</a> met je persoonlijke account. Hier kan je overzichtelijk op je dashboard zien hoe ver wij zijn met je aanvraag.</span></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">Wat kost het aanvragen van een vergunning</div>
+		    <div class="collapsible-body"><span>De kosten van elke vergunning aanvraag is verschillend per soort aanvraag. Om erachter te komen wat deze kost dien je de aanvraag op te zoeken. Bij de gedetajeerde informatie zie je dan ook de kosten.</span></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">Hoelang duurt het voordat ik weet of ik mijn omgevingsvergunning heb?</div>
+		    <div class="collapsible-body"><span>Nadat je een aanvraag hebt gedaan voor een omgevingsvergunning duurt het gemiddeld 6 weken voordat hier de uitslag van komt. De periode kan 1x verlengt worden als de aanvraag meer onderzoek vergt, of als er bezwaar is aangetekend.</span></div>
+		  </li>
+		</ul>
+		<h5>Nog geen antwoord gekregen op je vraag?</h5> 
+		<p>
+			Neem dan gerust <a href="/contact">contact</a> op met je gemeente voor je vraag. Zij helpen je graag verder.
+		</p>
+	</div>
+</div>
