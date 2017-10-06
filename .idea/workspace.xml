@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c892163-4c19-401b-9589-0377c5210b53" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/assets/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/assets/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/.angular-cli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/e2e/app.e2e-spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/e2e/app.po.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/e2e/tsconfig.e2e.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/protractor.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/api.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/api.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/app.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/app.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/app.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/app.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/auth-guard.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/auth-guard.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/contact/contact.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/contact/contact.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/contact/contact.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/guest-guard.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/guest-guard.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/home/home.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/home/home.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/home/home.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/home/home.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/login/login.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/login/login.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/login/login.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/login/login.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/environments/environment.prod.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/environments/environment.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/main.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/polyfills.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/test.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/tsconfig.app.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/tsconfig.spec.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/src/typings.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Portaal/tslint.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/.angular-cli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/e2e/app.e2e-spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/e2e/app.po.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/e2e/tsconfig.e2e.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/protractor.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/app/app.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/app/app.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/app/app.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/app/app.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/app/app.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/environments/environment.prod.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/environments/environment.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/main.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/polyfills.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/test.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/tsconfig.app.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/tsconfig.spec.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/src/typings.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/tslint.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/DataManager.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/DatabaseManager.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/Person.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Modules/Functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Modules/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/forms/loginform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/.sass-cache/822fe09c74c78afbe1ddf4f7afc94833a829fe2d/Style.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Skeleton-2.0.4/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Skeleton-2.0.4/css/skeleton.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Skeleton-2.0.4/images/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Skeleton-2.0.4/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-reboot.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-reboot.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-reboot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/css/Style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/css/Style.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/css/Style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/css/stylesheets" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/font-awesome.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/dashboard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/logout.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/css/mixins.css" afterPath="$PROJECT_DIR$/Portaal/src/app/contact/contact.component.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/font-awesome-4.7.0/css/variables.css" afterPath="$PROJECT_DIR$/Portaal/src/app/app.component.css" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nav.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/api.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portaal/src/app/login/login.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Portaal/src/app/guest-guard.service.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/auth-guard.service.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.html" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/nav/nav.component.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/api.service.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Portaal/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Portaal/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HackathonRNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackathonRNL" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Portaal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c892163-4c19-401b-9589-0377c5210b53" name="Default" comment="" />
+      <created>1507294747460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507294747460</updated>
+      <workItem from="1507294748965" duration="3256000" />
+      <workItem from="1507298521694" duration="4502000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7758000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Portaal/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/Reflect.d.ts" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-metadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-decorate.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/Portaal/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="88" lean-forward="false" selection-start-line="2" selection-start-column="88" selection-end-line="2" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/auth-guard.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/guest-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="75" lean-forward="true" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="88" lean-forward="false" selection-start-line="2" selection-start-column="88" selection-end-line="2" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/src/app/nav/nav.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portaal/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

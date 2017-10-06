@@ -1,0 +1,5 @@
+<ul>
+  <ng-container  *ngFor="let item of menu_items">
+    <li *ngIf="item.auth ? auth.isAuthenticated() : false"><a (click)="action(item.click)" [routerLink]="item.link">{{item.name}}</a></li>
+  </ng-container>
+</ul>
