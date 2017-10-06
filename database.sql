@@ -8,21 +8,21 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema rdnl
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema rdnl
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `rdnl` DEFAULT CHARACTER SET utf8 ;
+USE `rdnl` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Person`
+-- Table `rdnl`.`Person`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Person` ;
+DROP TABLE IF EXISTS `rdnl`.`Person` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Person` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Person` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Name` VARCHAR(45) NULL,
   `Sofi` VARCHAR(45) NULL,
@@ -37,11 +37,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Solutions`
+-- Table `rdnl`.`Solutions`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Solutions` ;
+DROP TABLE IF EXISTS `rdnl`.`Solutions` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Solutions` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Solutions` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Desc` TEXT NULL,
   `Title` VARCHAR(45) NULL,
@@ -50,11 +50,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Request`
+-- Table `rdnl`.`Request`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Request` ;
+DROP TABLE IF EXISTS `rdnl`.`Request` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Request` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Request` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(70) NULL,
   `Desc` TEXT NULL,
@@ -65,18 +65,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Request` (
   INDEX `fk_Request_Solutions1_idx` (`Solutions_Id` ASC),
   CONSTRAINT `fk_Request_Solutions1`
     FOREIGN KEY (`Solutions_Id`)
-    REFERENCES `mydb`.`Solutions` (`Id`)
+    REFERENCES `rdnl`.`Solutions` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Steps`
+-- Table `rdnl`.`Steps`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Steps` ;
+DROP TABLE IF EXISTS `rdnl`.`Steps` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Steps` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Steps` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(70) NULL,
   `Desc` TEXT NULL,
@@ -87,11 +87,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Organisation`
+-- Table `rdnl`.`Organisation`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Organisation` ;
+DROP TABLE IF EXISTS `rdnl`.`Organisation` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Organisation` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Organisation` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(70) NULL,
   `Adress` VARCHAR(45) NULL,
@@ -103,11 +103,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Request_has_Steps`
+-- Table `rdnl`.`Request_has_Steps`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Request_has_Steps` ;
+DROP TABLE IF EXISTS `rdnl`.`Request_has_Steps` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Request_has_Steps` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Request_has_Steps` (
   `Request_id` INT NOT NULL,
   `Steps_Id` INT NOT NULL,
   PRIMARY KEY (`Request_id`, `Steps_Id`),
@@ -115,23 +115,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Request_has_Steps` (
   INDEX `fk_Request_has_Steps_Request_idx` (`Request_id` ASC),
   CONSTRAINT `fk_Request_has_Steps_Request`
     FOREIGN KEY (`Request_id`)
-    REFERENCES `mydb`.`Request` (`Id`)
+    REFERENCES `rdnl`.`Request` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Request_has_Steps_Steps1`
     FOREIGN KEY (`Steps_Id`)
-    REFERENCES `mydb`.`Steps` (`Id`)
+    REFERENCES `rdnl`.`Steps` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Comments`
+-- Table `rdnl`.`Comments`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Comments` ;
+DROP TABLE IF EXISTS `rdnl`.`Comments` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Comments` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Comments` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Type` VARCHAR(45) NULL,
   `Desc` TEXT NULL,
@@ -141,18 +141,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Comments` (
   INDEX `fk_Comments_Person1_idx` (`Person_id` ASC),
   CONSTRAINT `fk_Comments_Person1`
     FOREIGN KEY (`Person_id`)
-    REFERENCES `mydb`.`Person` (`Id`)
+    REFERENCES `rdnl`.`Person` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Steps_has_Comments`
+-- Table `rdnl`.`Steps_has_Comments`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Steps_has_Comments` ;
+DROP TABLE IF EXISTS `rdnl`.`Steps_has_Comments` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Comments` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Steps_has_Comments` (
   `Steps_Id` INT NOT NULL,
   `Comments_Id` INT NOT NULL,
   PRIMARY KEY (`Steps_Id`, `Comments_Id`),
@@ -160,23 +160,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Comments` (
   INDEX `fk_Steps_has_Comments_Steps1_idx` (`Steps_Id` ASC),
   CONSTRAINT `fk_Steps_has_Comments_Steps1`
     FOREIGN KEY (`Steps_Id`)
-    REFERENCES `mydb`.`Steps` (`Id`)
+    REFERENCES `rdnl`.`Steps` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Steps_has_Comments_Comments1`
     FOREIGN KEY (`Comments_Id`)
-    REFERENCES `mydb`.`Comments` (`Id`)
+    REFERENCES `rdnl`.`Comments` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Organisation_has_Person`
+-- Table `rdnl`.`Organisation_has_Person`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Organisation_has_Person` ;
+DROP TABLE IF EXISTS `rdnl`.`Organisation_has_Person` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Organisation_has_Person` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Organisation_has_Person` (
   `Organisation_Id` INT NOT NULL,
   `Person_id` INT NOT NULL,
   PRIMARY KEY (`Organisation_Id`, `Person_id`),
@@ -184,23 +184,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Organisation_has_Person` (
   INDEX `fk_Organisation_has_Person_Organisation1_idx` (`Organisation_Id` ASC),
   CONSTRAINT `fk_Organisation_has_Person_Organisation1`
     FOREIGN KEY (`Organisation_Id`)
-    REFERENCES `mydb`.`Organisation` (`Id`)
+    REFERENCES `rdnl`.`Organisation` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Organisation_has_Person_Person1`
     FOREIGN KEY (`Person_id`)
-    REFERENCES `mydb`.`Person` (`Id`)
+    REFERENCES `rdnl`.`Person` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Person_has_Request`
+-- Table `rdnl`.`Person_has_Request`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Person_has_Request` ;
+DROP TABLE IF EXISTS `rdnl`.`Person_has_Request` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Person_has_Request` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Person_has_Request` (
   `Person_id` INT NOT NULL,
   `Request_id` INT NOT NULL,
   PRIMARY KEY (`Person_id`, `Request_id`),
@@ -208,23 +208,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Person_has_Request` (
   INDEX `fk_Person_has_Request_Person1_idx` (`Person_id` ASC),
   CONSTRAINT `fk_Person_has_Request_Person1`
     FOREIGN KEY (`Person_id`)
-    REFERENCES `mydb`.`Person` (`Id`)
+    REFERENCES `rdnl`.`Person` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Person_has_Request_Request1`
     FOREIGN KEY (`Request_id`)
-    REFERENCES `mydb`.`Request` (`Id`)
+    REFERENCES `rdnl`.`Request` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Invoice`
+-- Table `rdnl`.`Invoice`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Invoice` ;
+DROP TABLE IF EXISTS `rdnl`.`Invoice` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Invoice` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Invoice` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Desc` VARCHAR(45) NULL,
   `Title` VARCHAR(45) NULL,
@@ -236,11 +236,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Steps_has_Invoice`
+-- Table `rdnl`.`Steps_has_Invoice`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Steps_has_Invoice` ;
+DROP TABLE IF EXISTS `rdnl`.`Steps_has_Invoice` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Invoice` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Steps_has_Invoice` (
   `Steps_Id` INT NOT NULL,
   `Invoice_Id` INT NOT NULL,
   `Amount` FLOAT NULL,
@@ -249,23 +249,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Invoice` (
   INDEX `fk_Steps_has_Invoice_Steps1_idx` (`Steps_Id` ASC),
   CONSTRAINT `fk_Steps_has_Invoice_Steps1`
     FOREIGN KEY (`Steps_Id`)
-    REFERENCES `mydb`.`Steps` (`Id`)
+    REFERENCES `rdnl`.`Steps` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Steps_has_Invoice_Invoice1`
     FOREIGN KEY (`Invoice_Id`)
-    REFERENCES `mydb`.`Invoice` (`Id`)
+    REFERENCES `rdnl`.`Invoice` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Person_has_Invoice`
+-- Table `rdnl`.`Person_has_Invoice`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Person_has_Invoice` ;
+DROP TABLE IF EXISTS `rdnl`.`Person_has_Invoice` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Person_has_Invoice` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Person_has_Invoice` (
   `Person_Id` INT NOT NULL,
   `Invoice_Id` INT NOT NULL,
   PRIMARY KEY (`Person_Id`, `Invoice_Id`),
@@ -273,23 +273,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Person_has_Invoice` (
   INDEX `fk_Person_has_Invoice_Person1_idx` (`Person_Id` ASC),
   CONSTRAINT `fk_Person_has_Invoice_Person1`
     FOREIGN KEY (`Person_Id`)
-    REFERENCES `mydb`.`Person` (`Id`)
+    REFERENCES `rdnl`.`Person` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Person_has_Invoice_Invoice1`
     FOREIGN KEY (`Invoice_Id`)
-    REFERENCES `mydb`.`Invoice` (`Id`)
+    REFERENCES `rdnl`.`Invoice` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Steps_has_Organisation`
+-- Table `rdnl`.`Steps_has_Organisation`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Steps_has_Organisation` ;
+DROP TABLE IF EXISTS `rdnl`.`Steps_has_Organisation` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Organisation` (
+CREATE TABLE IF NOT EXISTS `rdnl`.`Steps_has_Organisation` (
   `Steps_Id` INT NOT NULL,
   `Organisation_Id` INT NOT NULL,
   PRIMARY KEY (`Steps_Id`, `Organisation_Id`),
@@ -297,12 +297,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Steps_has_Organisation` (
   INDEX `fk_Steps_has_Organisation_Steps1_idx` (`Steps_Id` ASC),
   CONSTRAINT `fk_Steps_has_Organisation_Steps1`
     FOREIGN KEY (`Steps_Id`)
-    REFERENCES `mydb`.`Steps` (`Id`)
+    REFERENCES `rdnl`.`Steps` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Steps_has_Organisation_Organisation1`
     FOREIGN KEY (`Organisation_Id`)
-    REFERENCES `mydb`.`Organisation` (`Id`)
+    REFERENCES `rdnl`.`Organisation` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
