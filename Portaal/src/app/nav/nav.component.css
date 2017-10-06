@@ -1,0 +1,14 @@
+nav{
+	background-color: #C73226;
+}
+nav div ul li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav div ul li:hover{
+	background-color: #E3E3E3;
+}
+nav div ul li:hover a{
+	color: #263248;
+}
