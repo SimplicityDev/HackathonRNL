@@ -10,6 +10,8 @@ import {AuthGuardService} from "./auth-guard.service";
 import {GuestGuardService} from "./guest-guard.service";
 import {CustomConfig, Ng2UiAuthModule} from "ng2-ui-auth";
 import {FormsModule} from "@angular/forms";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {ApiService} from "./api.service";
 
 export class AuthConfig extends CustomConfig {
     defaultHeaders = {"Content-Type": 'application/json'};
@@ -28,7 +30,12 @@ const routes: Routes = [
     path: "login",
     component: LoginComponent,
       canActivate: [GuestGuardService]
-  }
+  },
+    {
+        path: "dashboard",
+        component: DashboardComponent,
+        canActivate: [AuthGuardService]
+    }
 ];
 
 @NgModule({
@@ -37,7 +44,8 @@ const routes: Routes = [
     HomeComponent,
     NavComponent,
     LoginComponent,
-    ContactComponent
+    ContactComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     Ng2UiAuthModule.forRoot(AuthConfig),
   ],
-  providers: [AuthGuardService, GuestGuardService],
+  providers: [AuthGuardService, GuestGuardService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,30 +13,41 @@ export class NavComponent implements OnInit {
       {
         name: "Home",
           link: "/",
-          auth: true
+          show: 0
       },
       {
-          name: "woop",
-          link: "/",
-          auth: true
+          name: "Veelgestelde vragen",
+          link: "/faq",
+          show: 0
       },
       {
-          name: "bfoiewj",
-          link: "/",
-          auth: true
+          name: "Contact",
+          link: "/contact",
+          show: 0
       },
       {
           name: "Login",
           link: "/login",
-          auth: false
+          show: 1
+      },
+      {
+          name:"Dashboard",
+          link:"/dashboard",
+          show: 2
       },
       {
           name: "Logout",
           click: "ACTION_LOGOUT",
-          auth: true
+          show: 2
       },
   ];
-
+  public menuItemShouldBeShown(item_show) {
+    if(this.auth.isAuthenticated() && item_show === 2) {
+        return true;
+    } else if(!this.auth.isAuthenticated() && item_show === 1) {
+        return true;
+    }
+  }
   constructor(public auth: AuthService, private router: Router) { }
 
   ngOnInit() {

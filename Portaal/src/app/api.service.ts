@@ -10,4 +10,8 @@ export class ApiService {
   public me() {
     return this.http.get(this.base_url + 'user/me').map((res: Response) => res.json());
   }
+
+  public requests(u_id) {
+    return this.http.get(this.base_url + 'requests/all').map((res:Response) => res.json());
+  }
 }

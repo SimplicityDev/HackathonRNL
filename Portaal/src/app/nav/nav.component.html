@@ -1,5 +1,5 @@
 <ul>
   <ng-container  *ngFor="let item of menu_items">
-    <li *ngIf="item.auth ? auth.isAuthenticated() : false"><a (click)="action(item.click)" [routerLink]="item.link">{{item.name}}</a></li>
+    <li *ngIf="item.show === 0 || ((menuItemShouldBeShown(item.show) && item.show === 2) || (menuItemShouldBeShown(item.show) && item.show === 1 && router.url !== '/login'))"><a (click)="action(item.click)" [routerLink]="item.link">{{item.name}}</a></li>
   </ng-container>
 </ul>
