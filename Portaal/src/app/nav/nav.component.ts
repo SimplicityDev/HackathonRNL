@@ -34,6 +34,10 @@ export class NavComponent implements OnInit {
           name:"Dashboard",
           link:"/dashboard",
           show: 2
+      },{
+          name:"government",
+          link:"/dashboard-g",
+          show: 2
       },
       {
           name:"Search",

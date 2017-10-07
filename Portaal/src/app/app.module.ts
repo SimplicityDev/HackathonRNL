@@ -14,10 +14,14 @@ import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {ApiService} from "./api.service";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatDialogModule, MatExpansionModule, MatRadioModule} from "@angular/material";
+import {
+    MatButtonModule, MatDialogModule, MatExpansionModule, MatProgressSpinnerModule,
+    MatRadioModule
+} from "@angular/material";
 import { StepDialogComponent } from './step-dialog/step-dialog.component';
 import { FaqComponent } from './faq/faq.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { GovernmentDashboardComponent } from './government-dashboard/government-dashboard.component';
 export class AuthConfig extends CustomConfig {
     defaultHeaders = {"Content-Type": 'application/json'};
     loginUrl = 'http://localhost/hackathon_api/auth';
@@ -54,7 +58,12 @@ const routes: Routes = [
     path: "search",
     component: SearchComponent,
     canActivate: [AuthGuardService]
-  }
+  },
+    {
+        path: "dashboard-g",
+        component: GovernmentDashboardComponent,
+        canActivate: [AuthGuardService]
+    }
 ];
 
 @NgModule({
@@ -68,7 +77,8 @@ const routes: Routes = [
     StepDialogComponent,
     FaqComponent,
     SearchComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    GovernmentDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -79,6 +89,7 @@ const routes: Routes = [
       MatButtonModule,
       MatDialogModule,
       MatRadioModule,
+      MatProgressSpinnerModule,
       MatExpansionModule
   ],
   providers: [AuthGuardService, GuestGuardService, ApiService],
