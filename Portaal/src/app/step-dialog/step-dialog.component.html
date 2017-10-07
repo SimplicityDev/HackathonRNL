@@ -1,6 +1,6 @@
-<mat-expansion-panel *ngFor="let d of data; let i = index">
+<mat-expansion-panel *ngFor="let d of data; let i = index" class="{{d.status}}">
   <mat-expansion-panel-header>
-    <mat-panel-title>
+    <mat-panel-title class="title">
       {{d.title}}
     </mat-panel-title>
   <mat-panel-description *ngIf="d.status === 'completed'">
@@ -17,7 +17,7 @@
       Vereist je aandacht
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <mat-panel-description>
+  <mat-panel-description class="padding_top">
     {{d.desc}}
   </mat-panel-description>
 </mat-expansion-panel>

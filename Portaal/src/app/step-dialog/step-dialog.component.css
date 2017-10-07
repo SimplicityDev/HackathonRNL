@@ -1,0 +1,36 @@
+/*completed*/
+.completed mat-expansion-panel-header{
+	background-color: #2CAD23;
+	color: green;
+	font-weight: bold;
+}
+.completed .mat-expansion-panel-content{
+	background-color: rgba(0,255,0, 0.6);
+}
+
+.in_process mat-expansion-panel-header{
+	background-color:rgba(255,255,0,0.7);/*yellow*/
+}
+.in_process .mat-expansion-panel-content{
+	background-color:rgba(255,255,0,0.4)
+}
+/*nog te doen*/
+.pending mat-expansion-panel-header{
+	background-color: rgba(0,0,255, 0.5);
+}
+.pending .mat-expansion-panel-content{
+	background-color: rgba(0,0,255, 0.2);
+}
+/*bezig*/
+.attention_required mat-expansion-panel-header{
+	background-color:rgba(255,0,0,0.7);
+}
+.attention_required .mat-expansion-panel-content{
+	background-color:rgba(255,0,0,0.4);
+}
+.mat-expansion-panel-body mat-panel-description{
+	padding-top: 20px;
+}
+.padding_top{
+	padding-top: 20px;
+}

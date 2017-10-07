@@ -16,19 +16,9 @@ export class NavComponent implements OnInit {
           show: 0
       },
       {
-          name: "Veelgestelde vragen",
-          link: "/faq",
+          name:"Search",
+          link:"/search",
           show: 0
-      },
-      {
-          name: "Contact",
-          link: "/contact",
-          show: 0
-      },
-      {
-          name: "Login",
-          link: "/login",
-          show: 1
       },
       {
           name:"Dashboard",
@@ -40,8 +30,8 @@ export class NavComponent implements OnInit {
           show: 2
       },
       {
-          name:"Search",
-          link:"/search",
+          name: "Contact",
+          link: "/contact",
           show: 0
       },
       {
