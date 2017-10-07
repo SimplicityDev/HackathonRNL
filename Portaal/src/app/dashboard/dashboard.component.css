@@ -83,3 +83,7 @@
     text-shadow: 0 0 2px orange;
     box-shadow: 0 0 2px orange;
 }
+
+mat-panel-title.title {
+    width: 40%;
+}

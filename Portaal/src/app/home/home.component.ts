@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
     public requests = [
         {
-            title: "Dakkapel",
+            title: "Verbouwen - Dakkapel",
             step: 3,
             totalSteps: 12,
             person: {
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
             image: "dakkapel.jpg"
         },
         {
-            title: "Slopen",
+            title: "Verbouwen - Slopen",
             step: 3,
             person: {
                 street: "plein",
@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
             desc: "Een (gedeelte) van je woning/aanbouw slopen voor een andere uitebereiding/wijziging van je gebouw.",
             image: "slopen.jpg"
         },{
-            title: "Steiger",
+            title: "Terein - Steiger",
             step: 2,
             totalSteps: 8,
             person: {
@@ -43,6 +43,16 @@ export class HomeComponent implements OnInit {
             },
             desc: "Een aanlegstijger aan je erf grens laten neerleggen zodat er boten kunnen aanmeren bij je gebouw.",
             image: "steiger.jpg"
+        },{title: "Terein - Schutting",
+            step: 3,
+            totalSteps: 12,
+            person: {
+                street: "plein",
+                postalCode: "1234AB",
+                city: "Eindhoven"
+            },
+            desc: "Het plaatsen van een dakkapel op een woning in een woonwijk.",
+            image: "schutting.jpg"
         }
     ];
   constructor(ApiService: ApiService) {

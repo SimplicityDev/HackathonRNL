@@ -41,7 +41,7 @@ const routes: Routes = [
         canActivate: [AuthGuardService]
     },
     {
-        path: "faq",
+        path: "question",
         component: FaqComponent,
         canActivate: [AuthGuardService]
     },

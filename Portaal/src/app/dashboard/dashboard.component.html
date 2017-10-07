@@ -3,10 +3,14 @@
   </div>
   <div class="col s10">
     <div class="row">
+      <div class="col s12">
+      <h1>Mijn aanvragen</h1>
+      <p>Bent u benieuwd hoever uw gemeente is met uw vergunning aanvraag? Dan kunt dat hieronder zien.</p>
+      </div>
       <div class="col s6 m6 request-card" *ngFor="let req of requests; let i = index">
         <div class="card horizontal">
           <div class="card-image">
-            <img [src]="req.image">
+            <img [src]="'assets/images/'+req.image">
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -36,5 +40,17 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="row">
+  <div class="col s10 offset-s1">
+          <h1>Vragen?</h1>
+          <p>Heb je vragen over je aanvraag die op dit moment loopt? Dat kan natuurlijk. Neem gerust contact op met gemeente Meijerijstad<br />
+            Tel.: 073-9864731<br />
+            Mail: <a href="vergunningen@Meijerijstad.nl">vergunningen@meijerijstad.nl</a><br />
+            <b>Post/bezoekadress</b><br />
+            Markt 16<br />
+            5493VL<br />
+            Veghel</p>
+        </div>
   </div>
 </div>
