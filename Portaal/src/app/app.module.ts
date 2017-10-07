@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
+import { SearchComponent } from './search/search.component';
 import {AuthGuardService} from "./auth-guard.service";
 import {GuestGuardService} from "./guest-guard.service";
 import {CustomConfig, Ng2UiAuthModule} from "ng2-ui-auth";
@@ -43,7 +44,12 @@ const routes: Routes = [
         path: "faq",
         component: FaqComponent,
         canActivate: [AuthGuardService]
-    }
+    },
+  {
+    path: "search",
+    component: SearchComponent,
+    canActivate: [AuthGuardService]
+  }
 ];
 
 @NgModule({
@@ -55,7 +61,8 @@ const routes: Routes = [
     ContactComponent,
     DashboardComponent,
     StepDialogComponent,
-    FaqComponent
+    FaqComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
