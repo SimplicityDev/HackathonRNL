@@ -7,7 +7,7 @@ import {ApiService} from "../api.service";
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
+    public filteredItems;
     public requests = [
         {
             title: "Dakkapel",
@@ -47,9 +47,17 @@ export class SearchComponent implements OnInit {
   constructor(ApiService: ApiService) {
     ApiService.requests(localStorage.getItem("user_id"));
   }
-
-
+    assignCopy(){
+        this.filteredItems = Object.assign([], this.requests);
+    }
+    public filterItem(value) {
+        if (!value) this.assignCopy(); //when nothing has typed
+        this.filteredItems = Object.assign([], this.requests).filter(
+            item => item.title.toLowerCase().indexOf(value.toLowerCase()) > -1
+        )
+    }
   ngOnInit() {
+        this.filteredItems = this.requests;
   }
 
 }

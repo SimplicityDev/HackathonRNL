@@ -1,0 +1,15 @@
+<br><br>
+<div class="row">
+  <div class="col s4"></div>
+  <div class="col s8">
+
+    <div *ngFor="let q of questions; let i = index">
+      <p>{{q}}</p>
+      <mat-radio-group>
+        <mat-radio-button value="true" style="padding:10px;">Ja</mat-radio-button>
+        <br>
+        <mat-radio-button value="false" style="padding:10px;">Nee</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+</div>
