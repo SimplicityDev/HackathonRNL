@@ -55,9 +55,9 @@ export class NavComponent implements OnInit {
   action(action: String){
     switch(action){
         case "ACTION_LOGOUT":
-            this.auth.logout().subscribe(() => {
-                this.router.navigateByUrl("/login");
-            })
+            // this.auth.logout().subscribe(() => {
+            //     this.router.navigateByUrl("/login");
+            // })
           break;
     }
   }
