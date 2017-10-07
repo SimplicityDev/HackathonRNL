@@ -1,33 +1,35 @@
-<p>
-  dashboard works!
-</p>
 <div class="row">
-  <div class="col s6 m6" *ngFor="let req of requests">
-    <div class="card horizontal">
-      <div class="card-image">
-        <img [src]="req.image">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s5">
-              <h4 style="margin:5px;margin-left:0;">{{req.title}}</h4>
-              <br>
-              <p style="margin-left:20px;">
-                {{req.person.street}} <br/>
-                {{req.person.postalCode}}<br/>
-                {{req.person.city}}
-              </p>
-            </div>
-            <div class="col s7">
-              <h5 style="display:inline">Stap {{req.step}} </h5> <h6 style="display:inline"> van {{req.totalSteps}}</h6>
-              <br><br>
-              <div class="progress">
-                <div class="determinate" style="width: 70%"></div>
-
-              </div>
-              <div class="card-action" style="position:absolute;bottom:0;width:50%;">
-                <a href="#" style="float:right;">Bekijk hier alle stappen</a>
+  <div class="col s1">
+  </div>
+  <div class="col s10">
+    <div class="row">
+      <div class="col s6 m6 request-card" *ngFor="let req of requests; let i = index">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img [src]="req.image">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s5">
+                  <h5 style="margin:5px;margin-left:0;">{{req.title}}</h5>
+                  <br>
+                  <p style="margin-left:20px;">
+                    {{req.person.street}} <br/>
+                    {{req.person.postalCode}}<br/>
+                    {{req.person.city}}
+                  </p>
+                </div>
+                <div class="col s7">
+                  <h5 style="display:inline">Stap {{req.step}} </h5> <h6 style="display:inline"> van {{req.totalSteps}}</h6>
+                  <br><br>
+                  <div class="progress">
+                    <div class="determinate" [ngStyle]="{'width': ((100/req.totalSteps)*req.step)+'%'}"></div>
+                  </div>
+                  <div class="card-action" style="position:absolute;bottom:0;width:50%;">
+                    <a class="waves-effect waves-light btn modal-trigger" (click)="itemClicked(req.steps)" style="float:right;">Bekijk alle stappen</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -36,4 +38,3 @@
     </div>
   </div>
 </div>
-<div >

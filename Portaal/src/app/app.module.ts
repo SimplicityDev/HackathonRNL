@@ -12,7 +12,10 @@ import {CustomConfig, Ng2UiAuthModule} from "ng2-ui-auth";
 import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {ApiService} from "./api.service";
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatDialogModule, MatExpansionModule} from "@angular/material";
+import { StepDialogComponent } from './step-dialog/step-dialog.component';
+import { FaqComponent } from './faq/faq.component';
 export class AuthConfig extends CustomConfig {
     defaultHeaders = {"Content-Type": 'application/json'};
     loginUrl = 'http://localhost/hackathon_api/auth';
@@ -35,6 +38,11 @@ const routes: Routes = [
         path: "dashboard",
         component: DashboardComponent,
         canActivate: [AuthGuardService]
+    },
+    {
+        path: "faq",
+        component: FaqComponent,
+        canActivate: [AuthGuardService]
     }
 ];
 
@@ -45,15 +53,22 @@ const routes: Routes = [
     NavComponent,
     LoginComponent,
     ContactComponent,
-    DashboardComponent
+    DashboardComponent,
+    StepDialogComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
       FormsModule,
     RouterModule.forRoot(routes),
     Ng2UiAuthModule.forRoot(AuthConfig),
+      BrowserAnimationsModule,
+      MatButtonModule,
+      MatDialogModule,
+      MatExpansionModule
   ],
   providers: [AuthGuardService, GuestGuardService, ApiService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+    entryComponents: [StepDialogComponent]
 })
 export class AppModule { }

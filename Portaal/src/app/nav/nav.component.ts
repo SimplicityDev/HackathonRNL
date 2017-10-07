@@ -40,6 +40,11 @@ export class NavComponent implements OnInit {
           click: "ACTION_LOGOUT",
           show: 2
       },
+      {
+          name: "faq",
+          link: "/faq",
+          show:2,
+      }
   ];
   public menuItemShouldBeShown(item_show) {
     if(this.auth.isAuthenticated() && item_show === 2) {

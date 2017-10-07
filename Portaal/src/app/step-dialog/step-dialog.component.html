@@ -1,0 +1,26 @@
+<mat-expansion-panel *ngFor="let d of data; let i = index">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{d.title}}
+    </mat-panel-title>
+  <mat-panel-description *ngIf="d.status === 'completed'">
+    Afgerond
+  </mat-panel-description>
+
+    <mat-panel-description *ngIf="d.status === 'in_progress'">
+      In behandeling
+    </mat-panel-description>
+    <mat-panel-description *ngIf="d.status === 'pending'">
+      Te behandelen
+    </mat-panel-description>
+    <mat-panel-description *ngIf="d.status === 'attention_required'">
+      Vereist je aandacht
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-panel-description>
+    {{d.desc}}
+  </mat-panel-description>
+</mat-expansion-panel>
+<mat-dialog-actions>
+  <a mat-button (click)="close()">Sluiten</a>
+</mat-dialog-actions>

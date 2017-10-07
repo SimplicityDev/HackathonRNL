@@ -1,0 +1,85 @@
+.request-card .card{
+    max-height:200px !important;
+}
+.card-content {
+    max-height: 200px;
+}
+.card-action {
+    padding: 16px 0px;
+}
+.card-content.error:after
+{
+    content:"ERROR";
+    position:absolute;
+    top:70px;
+    left:10px;
+    z-index:1;
+    font-family:Arial,sans-serif;
+    -webkit-transform: rotate(-30deg); /* Safari */
+    -moz-transform: rotate(-30deg); /* Firefox */
+    -ms-transform: rotate(-30deg); /* IE */
+    -o-transform: rotate(-30deg); /* Opera */
+    transform: rotate(-30deg);
+    font-size:40px;
+    color:#c00;
+    background:#fff;
+    border:solid 4px #c00;
+    padding:5px;
+    border-radius:5px;
+    zoom:1;
+    filter:alpha(opacity=70);
+    opacity:0.5;
+    -webkit-text-shadow: 0 0 2px #c00;
+    text-shadow: 0 0 2px #c00;
+    box-shadow: 0 0 2px #c00;
+}
+.card-content.afgerond:after {
+    content: "AFGEROND";
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    -webkit-transform: rotate(-30deg); /* Safari */
+    -moz-transform: rotate(-30deg); /* Firefox */
+    -ms-transform: rotate(-30deg); /* IE */
+    -o-transform: rotate(-30deg); /* Opera */
+    transform: rotate(-30deg);
+    font-size: 40px;
+    color: green;
+    background: #fff;
+    border: solid 4px green;
+    padding: 5px;
+    border-radius: 5px;
+    zoom: 1;
+    filter: alpha(opacity=70);
+    opacity: 0.5;
+    -webkit-text-shadow: 0 0 2px green;
+    text-shadow: 0 0 2px green;
+    box-shadow: 0 0 2px green;
+}
+.card-content.in_progress:after {
+    content: "IN BEHANDELING";
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    -webkit-transform: rotate(-30deg); /* Safari */
+    -moz-transform: rotate(-30deg); /* Firefox */
+    -ms-transform: rotate(-30deg); /* IE */
+    -o-transform: rotate(-30deg); /* Opera */
+    transform: rotate(-30deg);
+    font-size: 40px;
+    color: orange;
+    background: #fff;
+    border: solid 4px orange;
+    padding: 5px;
+    border-radius: 5px;
+    zoom: 1;
+    filter: alpha(opacity=70);
+    opacity: 0.5;
+    -webkit-text-shadow: 0 0 2px orange;
+    text-shadow: 0 0 2px orange;
+    box-shadow: 0 0 2px orange;
+}
