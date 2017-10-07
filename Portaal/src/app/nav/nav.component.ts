@@ -36,15 +36,15 @@ export class NavComponent implements OnInit {
           show: 2
       },
       {
+          name:"Search",
+          link:"/search",
+          show: 0
+      },
+      {
           name: "Logout",
           click: "ACTION_LOGOUT",
           show: 2
       },
-      {
-          name: "faq",
-          link: "/faq",
-          show:2,
-      }
   ];
   public menuItemShouldBeShown(item_show) {
     if(this.auth.isAuthenticated() && item_show === 2) {

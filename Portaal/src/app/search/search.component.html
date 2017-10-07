@@ -6,3 +6,34 @@
 		</form>
 	</div>		
 </div>
+<div class="row">
+  <div class="col s8 offset-s2">
+    <div class="col s6 m6" *ngFor="let req of requests">
+      <div class="card">
+        <div class="card-image">
+          <img [src]="'assets/images/'+req.image">
+          <span class="card-title">{{req.title}}</span>
+        </div>
+        <div class="card-content">
+          <p>{{req.desc}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="link">Vraag deze vergunning aan voor jouw project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Gaat het om werkzaamheden aan een monument?<p>
+	<input type="radio" name="werkzaamheden" value="false" id="false"><label for="false">Nee</label><br />
+	<input type="radio" name="werkzaamheden" value="false" id="true"><label for="true">Ja</label>
+
+<p>Krijgt uw dakkapel een plat dak?</p>
+	<input type="radio" name="werkzaamheden" value="false" id="false"><label for="false">Nee</label><br />
+	<input type="radio" name="werkzaamheden" value="false" id="true"><label for="true">Ja</label>
+<p>Wat is de hoogte van de dakkapel?</p>
+	<input type="radio" name="werkzaamheden" value="false" id="false"><label for="false">Nee</label><br />
+	<input type="radio" name="werkzaamheden" value="false" id="true"><label for="true">Ja</label>
+
+<!-- daarna een popup aanvraag succesvol en redirect naar dashboard

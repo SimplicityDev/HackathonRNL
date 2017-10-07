@@ -23,7 +23,6 @@ export class AuthConfig extends CustomConfig {
     authHeader = "auth";
 }
 
-
 const routes: Routes = [
   {
     path: "",

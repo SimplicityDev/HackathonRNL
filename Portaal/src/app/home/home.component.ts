@@ -18,21 +18,11 @@ export class HomeComponent implements OnInit {
                 postalCode: "1234AB",
                 city: "Eindhoven"
             },
-            desc: "lorem ipsum dolor sit amet si;dughunaek;j gakldng asld knfbslkd jfng sldkjfn skdjf ksdfj nskdlf nsdkfj nsndmf nsd ,sdf ",
+            desc: "Het plaatsen van een dakkapel op een woning in een woonwijk.",
             image: "dakkapel.jpg"
-        },{
-            title: "Steiger",
-            step: 2,
-            totalSteps: 8,
-            person: {
-                street: "plein",
-                postalCode: "1234AB",
-                city: "Eindhoven"
-            },
-            desc: "qwertyuiopasdf hjkl;zxcvbnm wertyuisdfghjvbn edfgbnjyhgvbnlouytgfc vbnhmnytghv",
-            image: "steiger.jpg"
-        }, {
-            title: "Huis slopen",
+        },
+        {
+            title: "Slopen",
             step: 3,
             person: {
                 street: "plein",
@@ -40,7 +30,7 @@ export class HomeComponent implements OnInit {
                 city: "Eindhoven"
             },
             totalSteps: 4,
-            desc: "Sloop die shit",
+            desc: "Een (gedeelte) van je woning/aanbouw slopen voor een andere uitebereiding/wijziging van je gebouw.",
             image: "slopen.jpg"
         },{
             title: "Steiger",
@@ -51,7 +41,7 @@ export class HomeComponent implements OnInit {
                 postalCode: "1234AB",
                 city: "Eindhoven"
             },
-            desc: "qwertyuiopasdfghj kl;zxcvbnm wertyuisdfghjvbn edfgbnjyhgvbnlouytgfc vbnhmnytghv",
+            desc: "Een aanlegstijger aan je erf grens laten neerleggen zodat er boten kunnen aanmeren bij je gebouw.",
             image: "steiger.jpg"
         }
     ];
